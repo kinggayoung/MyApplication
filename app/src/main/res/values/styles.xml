@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- NoActionBar : Toolbar를 사용하기 위해서 디폴트 액션바 없앰 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!--
+            colorPrimary : 액션바(타이틀바) 색상
+            colorPrimaryDark : 상태바 색상
+            windowLightStatusBar : 상태바 글꼴 색깔 -> true : 검은색, false : 흰색
+        -->
+
+        <!--상단 타이틀 없애기
+        <item name = "windowNoTitle">true</item>-->
+    </style>
+
+    <string name ="draw_open">drawer_open</string>
+    <string name ="draw_close">drawer_close</string>
+
+</resources>

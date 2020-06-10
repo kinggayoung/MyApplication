@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DaumMap"></activity>
+        <!--android:usesCleartextTraffic="true" : 모든 Http에 접근 허용
+        안 하면 다음 지도할 때, cleartext http traffic to ot1.maps.daum-img.net not permitted 오류 남 -->
+
+        <!-- Google Map -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBUwzsyOawCyYkdEZq5R47IJmjHyiAmQYY" />
+
+        <!-- Daum Map -->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="4fc3e26204815dd82705be1d3d454eda" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
